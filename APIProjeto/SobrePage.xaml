@@ -1,0 +1,18 @@
+<ContentPage
+    x:Class="APIProjeto.SobrePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Sobre">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="32"
+            Spacing="16"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Label Text="Clima e Fotos" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Label Text="Versão 1.0" FontSize="18" HorizontalTextAlignment="Center" />
+            <Label Text="Consulte o clima de uma cidade e veja fotos relacionadas ao local." HorizontalTextAlignment="Center" />
+            <Label Text="Os dados climáticos são fornecidos pela OpenWeatherMap e as imagens são fornecidas pelo Unsplash." HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

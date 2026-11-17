@@ -1,0 +1,23 @@
+<Shell
+    x:Class="APIProjeto.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:APIProjeto"
+    Title="Clima e Fotos">
+
+    <TabBar>
+        <ShellContent
+            Title="Clima"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        <ShellContent
+            Title="Fotos"
+            ContentTemplate="{DataTemplate local:FotosPage}"
+            Route="FotosPage" />
+        <ShellContent
+            Title="Sobre"
+            ContentTemplate="{DataTemplate local:SobrePage}"
+            Route="SobrePage" />
+    </TabBar>
+
+</Shell>

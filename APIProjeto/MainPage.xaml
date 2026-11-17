@@ -1,0 +1,40 @@
+﻿<ContentPage
+    x:Class="APIProjeto.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Clima">
+    <Grid>
+        <Image x:Name="ImgFundo" Aspect="AspectFill" />
+        <BoxView Color="#80000000" />
+        <ScrollView>
+            <VerticalStackLayout
+                Padding="30"
+                Spacing="16"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Label Text="Clima agora" TextColor="White" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                <Picker
+                    x:Name="PickerEstado"
+                    Title="Selecione o estado"
+                    TitleColor="#DDFFFFFF"
+                    TextColor="White"
+                    BackgroundColor="#55000000"
+                    SelectedIndexChanged="OnEstadoSelecionado" />
+                <Picker
+                    x:Name="PickerCidade"
+                    Title="Selecione a cidade"
+                    TitleColor="#DDFFFFFF"
+                    TextColor="White"
+                    BackgroundColor="#55000000"
+                    IsEnabled="False" />
+                <Button Text="Buscar Clima" Clicked="OnBuscarClimaClicked" />
+                <ActivityIndicator x:Name="Indicador" IsVisible="False" IsRunning="False" Color="White" />
+                <Label x:Name="LblCidade" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                <Label x:Name="LblTemperatura" TextColor="White" FontSize="42" HorizontalTextAlignment="Center" />
+                <Label x:Name="LblUmidade" TextColor="White" FontSize="18" HorizontalTextAlignment="Center" />
+                <Label x:Name="LblDescricao" TextColor="White" FontSize="18" HorizontalTextAlignment="Center" />
+                <Label x:Name="LblErro" TextColor="#FFFF99" HorizontalTextAlignment="Center" IsVisible="False" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
